@@ -5,12 +5,18 @@
 .backgroundImage {
    background: #fff url("../public/images/IMG_7283.jpeg") left center/cover
       no-repeat;
+   background-attachment: fixed;
    min-height: 100vh;
 }
 .weight600 {
    font-weight: 800;
    text-decoration: underline;
    font-size: larger;
+}
+.weight800 {
+   font-weight: 800;
+   color: black;
+   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .lightWeight {
@@ -37,15 +43,30 @@
 }
 
 .navBar-float {
-   position: absolute;
+   position: fixed !important;
    left: 0;
    min-height: 100vh;
    color: white;
    list-style: none;
 }
+
 .navIcon {
    transition: all 0.5s ease;
    opacity: 0.7;
+}
+.navIcon::before {
+   background: linear-gradient(
+      to bottom,
+      #ccc 0%,
+      #ccc 50%,
+      #555 50%,
+      #555 100%
+   );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.navIcon:active {
+   transform: translateY(5px) !important;
 }
 .navIcon:hover {
    transform: scale(1.1);
@@ -58,44 +79,80 @@
    opacity: 0;
    transition: all 0.5s ease;
    cursor: pointer;
+
+   height: 40px;
+
+   text-align: center;
 }
 .tool-tip:active {
-   transform: translateY(5px);
+   transform: translateY(2px);
 }
 
 .tool-tip-mobile {
    cursor: pointer;
 }
 .navIcon:hover .tool-tip {
-   left: 100%;
-   opacity: 1;
-}
-.navArrow {
-   position: absolute;
-   left: 0%;
-   bottom: 10%;
-   color: white;
-   transition: left 0.5s ease;
-}
-#arrowNav {
-   visibility: hidden;
-}
-#mobile-nav {
-   list-style: none;
-   background-color: rgb(255, 255, 255);
-   min-height: 100vh;
-   width: 50vw;
-   position: absolute;
-   color: black;
-   bottom: 0;
-   transition: left 0.5s ease;
-}
-#mobile-nav .navIcon {
+   left: 70%;
    opacity: 1;
 }
 
-#arrowNav:checked + .navArrow {
+.nav-bar-mobile {
+   position: fixed;
+   bottom: 10%;
+   left: 2%;
+   z-index: 2;
 }
-#arrowNav:checked + #mobile-nav {
-   display: block;
+
+.menus {
+   list-style: none;
+   position: absolute;
+   top: -100px;
+   background-color: rgba(0, 0, 0, 0.774);
+   border-radius: 20px;
+   transition: all 0.3s ease;
+   z-index: 1;
+
+   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.arrowNav {
+   color: rgba(116, 116, 116, 0.582);
+}
+.arrowNav:active {
+   transform: scale(1.2);
+}
+.mobileIconMenu {
+   color: rgb(255, 255, 255);
+}
+.btn:active {
+   transform: translateY(2px);
+}
+#check {
+   visibility: hidden;
+}
+
+.h-100 {
+   height: 100%;
+}
+
+.backgroundImage-2 {
+   background-image: url("../public/images/brandi-redd-aJTiW00qqtI-unsplash.png");
+   background-position: left center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 40vh;
+}
+.text-justify {
+   text-align: justify;
+   text-justify: inter-word;
+}
+.imgNan {
+   height: 250px;
+   width: 250px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
 }
