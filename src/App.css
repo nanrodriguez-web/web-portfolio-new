@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+   font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backgroundImage {
+   background: #fff url("../public/images/IMG_7283.jpeg") left center/cover
+      no-repeat;
+   min-height: 100vh;
+}
+.weight600 {
+   font-weight: 800;
+   text-decoration: underline;
+   font-size: larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lightWeight {
+   font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-white {
+   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-inline-item {
+   margin-top: 10px;
+   transition: all 0.5s ease;
+}
+.list-inline-item:hover {
+   transform: scale(1.2);
+}
+.linkDecoration {
+   text-decoration: none;
+   color: white !important;
+}
+.min-height-100vh {
+   min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBar-float {
+   position: absolute;
+   left: 0;
+   min-height: 100vh;
+   color: white;
+   list-style: none;
+}
+.navIcon {
+   transition: all 0.5s ease;
+   opacity: 0.7;
+}
+.navIcon:hover {
+   transform: scale(1.1);
+   opacity: 1;
+}
+
+.tool-tip {
+   position: absolute;
+   left: -55%;
+   opacity: 0;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+.tool-tip:active {
+   transform: translateY(5px);
+}
+
+.tool-tip-mobile {
+   cursor: pointer;
+}
+.navIcon:hover .tool-tip {
+   left: 100%;
+   opacity: 1;
+}
+.navArrow {
+   position: absolute;
+   left: 0%;
+   bottom: 10%;
+   color: white;
+   transition: left 0.5s ease;
+}
+#arrowNav {
+   visibility: hidden;
+}
+#mobile-nav {
+   list-style: none;
+   background-color: rgb(255, 255, 255);
+   min-height: 100vh;
+   width: 50vw;
+   position: absolute;
+   color: black;
+   bottom: 0;
+   transition: left 0.5s ease;
+}
+#mobile-nav .navIcon {
+   opacity: 1;
+}
+
+#arrowNav:checked + .navArrow {
+}
+#arrowNav:checked + #mobile-nav {
+   display: block;
 }
