@@ -36,10 +36,7 @@ export default function ExperienceEducation() {
                         assessments, developing designs and cost estimates, and
                         overseeing the construction and installation of the
                         systems. I also bring to web development my experience
-                        in problem-solving and critical thinking. As an
-                        Irrigation Engineer, I was often faced with complex
-                        challenges and had to find creative and innovative
-                        solutions.
+                        in problem-solving and critical thinking.
                      </p>
                   </div>
                </MDBCol>

@@ -11,83 +11,34 @@ import {
    MDBCardTitle,
    MDBBtn,
 } from "mdb-react-ui-kit";
-import Carousel from "react-bootstrap/Carousel";
+
+import MyCarousel from "../components/Card.js";
+import responsive from "../images/responsive.png";
 
 export default function Works() {
    return (
-      <div className="workSection py-5 d-flex flex-column align-items-center">
-         <h1 className="weight900 my-5">Works</h1>
+      <div className="workSection py-5 d-flex flex-column justify-content-center align-items-center">
+         <h1 className="weight900">Works</h1>
          <MDBContainer>
             <MDBRow className="d-flex justify-content-center">
-               <MDBCol md={9} className="d-lg-flex justify-content-center">
-                  <Carousel>
-                     <Carousel.Item>
-                        <MDBCard className="Card">
-                           <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                           >
-                              <MDBCardImage
-                                 src="https://mdbootstrap.com/img/new/standard/nature/111.webp"
-                                 fluid
-                                 alt="..."
-                              />
-                              <a>
-                                 <div
-                                    className="mask"
-                                    style={{
-                                       backgroundColor:
-                                          "rgba(251, 251, 251, 0.15)",
-                                    }}
-                                 ></div>
-                              </a>
-                           </MDBRipple>
-                           <MDBCardBody>
-                              <MDBCardTitle>Card title</MDBCardTitle>
-                              <MDBCardText>
-                                 Some quick example text to build on the card
-                                 title and make up the bulk of the card's
-                                 content.
-                              </MDBCardText>
-                              <MDBBtn href="#">Button</MDBBtn>
-                           </MDBCardBody>
-                        </MDBCard>
-                     </Carousel.Item>
-                     <Carousel.Item>
-                        <MDBCard className="Card">
-                           <MDBRipple
-                              rippleColor="light"
-                              rippleTag="div"
-                              className="bg-image hover-overlay"
-                           >
-                              <MDBCardImage
-                                 src="https://mdbootstrap.com/img/new/standard/nature/111.webp"
-                                 fluid
-                                 alt="..."
-                              />
-                              <a>
-                                 <div
-                                    className="mask"
-                                    style={{
-                                       backgroundColor:
-                                          "rgba(251, 251, 251, 0.15)",
-                                    }}
-                                 ></div>
-                              </a>
-                           </MDBRipple>
-                           <MDBCardBody>
-                              <MDBCardTitle>Card title</MDBCardTitle>
-                              <MDBCardText>
-                                 Some quick example text to build on the card
-                                 title and make up the bulk of the card's
-                                 content.
-                              </MDBCardText>
-                              <MDBBtn href="#">Button</MDBBtn>
-                           </MDBCardBody>
-                        </MDBCard>
-                     </Carousel.Item>
-                  </Carousel>
+               <MDBCol md={6} className="d-lg-flex justify-content-center my-5">
+                  <MyCarousel />
+               </MDBCol>
+               <MDBCol md={6} className="d-lg-flex justify-content-center">
+                  <div className="d-flex flex-column align-items-center">
+                     <img
+                        className="responsiveBanner img-fluid"
+                        src={responsive}
+                        alt=""
+                     />
+                     <h4 className="lightText-WorkSection text-center">
+                        Mobile Friendly Websites
+                     </h4>
+                     <p className="descriptionTag text-center">
+                        My projects was developed to be responsive on different
+                        devices
+                     </p>
+                  </div>
                </MDBCol>
             </MDBRow>
          </MDBContainer>
