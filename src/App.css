@@ -207,6 +207,7 @@
 
 .skillsSection {
    min-height: 80vh;
+   margin: 100px 0 100px 0;
 }
 .skillsIcon {
    width: 100px;
@@ -234,4 +235,48 @@
 }
 .skillsIcon:hover + div > .underLine {
    width: 30px !important   ;
+}
+
+.banner {
+   position: absolute;
+   bottom: -4rem;
+   min-height: 8rem;
+   background-color: rgb(56, 56, 56);
+   border-radius: 2rem;
+   width: 80vw;
+   z-index: 1;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.bannerButton {
+   height: 2.5rem;
+   font-size: clamp(0.625rem, 0.6019rem + 0.1235vw, 0.75rem) !important;
+   width: 150px;
+}
+.bannerTitle {
+   color: white;
+   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.6);
+}
+
+.contactCard {
+   min-width: 40%;
+}
+
+.footer {
+   background-image: url("../src/images/pexels-johannes-plenio-1103970.jpg");
+   background-position: left center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 60vh;
+}
+.contactCardtitle {
+   font-size: clamp(0.75rem, 0.7037rem + 0.2469vw, 1rem);
+}
+.contactCardName {
+   font-size: clamp(1rem, 0.9537rem + 0.2469vw, 1.25rem);
+}
+.contactCardDetails {
+   font-size: clamp(0.75rem, 0.7269rem + 0.1235vw, 0.875rem);
 }

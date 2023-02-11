@@ -9,6 +9,7 @@ import {
 import { Navigate } from "react-router-dom";
 import About from "../components/About";
 import ExperienceEducation from "../components/ExperienceEducation";
+import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
 
@@ -93,7 +94,6 @@ export default function Home() {
                                  fas
                                  icon="envelope"
                                  size="2x"
-                                 onClick={<Navigate to="" />}
                               />
                            </a>
                         </li>
@@ -106,6 +106,7 @@ export default function Home() {
          <ExperienceEducation />
          <Works />
          <Skills />
+         <Footer />
       </>
    );
 }
