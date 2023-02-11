@@ -16,16 +16,13 @@ export default function Footer() {
 
    return (
       <>
-         <BannerCollab />
          <div
             id="contact"
-            className="footer d-flex align-items-center justify-content-center flex-column"
+            className=" position-relative footer d-flex  align-items-center justify-content-center flex-column"
          >
-            <MDBContainer
-               data-aos="zoom-in-up"
-               className="d-flex my-5 flex-column justify-content-center align-items-center h-100"
-            >
-               <div className="contactCard my-5">
+            <BannerCollab />
+            <MDBContainer className="  d-flex my-5 flex-column justify-content-center align-items-center h-100">
+               <div data-aos="zoom-up" className="contactCard my-5">
                   <MDBCard>
                      <MDBCardBody>
                         <h5 className="contactCardtitle">Contact Details</h5>
@@ -41,7 +38,7 @@ export default function Footer() {
                      </MDBCardBody>
                   </MDBCard>
                </div>
-               <MDBTypography listInLine className="mb-0">
+               <MDBTypography data-aos="zoom-down" listInLine className="mb-0">
                   <li className="list-inline-item">
                      <a
                         target="_blank"
@@ -108,7 +105,7 @@ export default function Footer() {
                      </a>
                   </li>
                </MDBTypography>
-               <div className="">
+               <div className="mt-3">
                   <span>Nan Rodriguez &copy; {year}</span>
                </div>
             </MDBContainer>

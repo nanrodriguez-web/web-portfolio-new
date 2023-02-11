@@ -11,6 +11,7 @@ export default function About() {
                </h1>
                <span
                   data-aos="zoom-in"
+                  data-aos-duration="2500"
                   className="underLineTitle text-center"
                ></span>
             </div>
@@ -25,7 +26,7 @@ export default function About() {
                      <img className="imgNan" src={image} alt="" />
                   </MDBCol>
                   <MDBCol
-                     data-aos="fade-left"
+                     data-aos="zoom-in"
                      md={6}
                      className="d-flex align-items-center  align-items-md-start flex-column justify-content-center my-4"
                   >

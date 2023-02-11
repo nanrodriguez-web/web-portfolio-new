@@ -22,25 +22,26 @@ export default function Works() {
          className="workSection py-5 d-flex flex-column justify-content-center align-items-center"
       >
          <div className="d-flex flex-column align-items-center mt-4">
-            <h1 data-aos="zoom-in-down" className="weight900">
+            <h1 data-aos="fade-down" className="weight900">
                Works
             </h1>
             <span
                data-aos="zoom-in"
+               data-aos-duration="2500"
                className="underLineTitleLight text-center"
             ></span>
          </div>
          <MDBContainer>
             <MDBRow className="d-flex justify-content-center">
                <MDBCol
-                  lg={6}
                   data-aos="zoom-in"
+                  lg={6}
                   className="d-lg-flex justify-content-center my-5"
                >
                   <MyCarousel />
                </MDBCol>
                <MDBCol
-                  data-aos="zoom-in-left"
+                  data-aos="fade-in"
                   lg={6}
                   className="d-lg-flex justify-content-center"
                >

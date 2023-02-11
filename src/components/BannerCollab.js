@@ -72,11 +72,8 @@ export default function BannerCollab() {
 
    return (
       <>
-         <MDBContainer
-            data-aos="zoom-in"
-            className="position-relative text-center d-flex justify-content-center w-100"
-         >
-            <MDBRow className="banner text-center p-3">
+         <MDBContainer className="text-center d-flex justify-content-center w-100">
+            <MDBRow data-aos="zoom-out" className="banner text-center p-3">
                <MDBCol className="d-lg-flex align-items-center justify-content-between mx-auto my-auto">
                   <h2 className="bannerTitle my-2 mx-auto">
                      Want some collaboration?
@@ -97,7 +94,6 @@ export default function BannerCollab() {
 
             {/* Modal */}
 
-            <MDBBtn onClick={toggleShow}>Vertically centered modal</MDBBtn>
             <MDBModal
                tabIndex="-1"
                show={centredModal}

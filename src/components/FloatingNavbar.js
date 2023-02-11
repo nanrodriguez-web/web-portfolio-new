@@ -1,5 +1,6 @@
 import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+
 export default function FloatingNavbar() {
    const [isChecked, setIsChecked] = useState(false);
    const [opacity, setOpacity] = useState(0);

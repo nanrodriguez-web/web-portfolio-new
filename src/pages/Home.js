@@ -5,6 +5,7 @@ import {
    MDBRow,
    MDBTypography,
 } from "mdb-react-ui-kit";
+import { useState } from "react";
 
 import { Navigate } from "react-router-dom";
 import About from "../components/About";
@@ -21,11 +22,12 @@ export default function Home() {
                <MDBRow
                   data-aos="fade-right"
                   data-aos-duration="3000"
-                  className="ms-4 d-flex justify-content-center align-items-center min-height-100vh"
+                  style={{ overflowX: "hidden" }}
+                  className=" overflow-x-hidden ms-4 d-flex justify-content-center align-items-center min-height-100vh"
                >
                   <MDBCol className="font-white">
-                     <h3>Hey!</h3>
-                     <h1 className="lightWeight d-lg-block d-flex flex-column ">
+                     <h3 className="text-shadow-white">Hey!</h3>
+                     <h1 className="lightWeight text-shadow-white d-lg-block d-flex flex-column ">
                         <span className="p-0">I'm a </span>
                         <span className="weight600">Full-Stack Developer</span>
                      </h1>

@@ -5,9 +5,14 @@ export default function ExperienceEducation() {
       <>
          <MDBContainer>
             <MDBRow className="experienceSection my-3 px-md-5">
-               <MDBCol data-aos="fade-up" lg={6} className="px-xl-5">
-                  <h4 className="text-center my-2 weight800 ">Experience</h4>
-                  <div className="my-3">
+               <MDBCol lg={6} className="px-xl-5">
+                  <h4
+                     data-aos="fade-down"
+                     className="text-center my-2 weight800 "
+                  >
+                     Experience
+                  </h4>
+                  <div data-aos="fade-up" className="my-3">
                      <h5>Park Maintenance Supervisor</h5>
                      <h6>
                         <em>February 2022 - November 2022</em>
@@ -21,7 +26,7 @@ export default function ExperienceEducation() {
                         to ensure their continued performance and security
                      </p>
                   </div>
-                  <div className="my-3">
+                  <div data-aos="fade-up" className="my-3">
                      <h5>Irrigation Engineer & Designer</h5>
                      <h6>
                         <em>November 2018 - February 2022</em>
@@ -40,9 +45,14 @@ export default function ExperienceEducation() {
                      </p>
                   </div>
                </MDBCol>
-               <MDBCol data-aos="fade-up" lg={6} className="px-xl-5">
-                  <h4 className="text-center my-2 weight800 ">Education</h4>
-                  <div className="my-3">
+               <MDBCol lg={6} className="px-xl-5">
+                  <h4
+                     data-aos="fade-down"
+                     className="text-center my-2 weight800 "
+                  >
+                     Education
+                  </h4>
+                  <div data-aos="fade-up" className="my-3">
                      <h5>Full Stack Development</h5>
                      <h6>
                         <em>December 2022 - February 2023</em>
@@ -61,7 +71,7 @@ export default function ExperienceEducation() {
                         for my technical skills and attention to detail.
                      </p>
                   </div>
-                  <div className="my-5">
+                  <div data-aos="fade-up" className="my-5">
                      <h5>
                         Bachelor of Science in Agricultural and Biosystems
                         Engineering

@@ -109,7 +109,7 @@
    position: fixed;
    bottom: 10%;
    left: 2%;
-   z-index: 2;
+   z-index: 10;
 }
 
 .menus {
@@ -192,7 +192,7 @@
    font-size: clamp(0.625rem, 0.6019rem + 0.1235vw, 0.75rem) !important;
 }
 .responsiveBanner {
-   max-height: 40vh;
+   max-height: 50vh;
 }
 .lightText-WorkSection {
    color: rgba(255, 255, 255, 0.808);
@@ -215,14 +215,14 @@ a {
 }
 .skillsIcon {
    width: 100px;
-   margin: 10px 25px 10px 25px;
+   margin-bottom: 5px;
    transition: transform 0.3s ease;
 }
 .skillsIcon:hover {
-   transform: scale(1.2);
+   transform: scale(1.1);
 }
 .skillSet {
-   margin: 0 !important;
+   margin: 5px;
 }
 .underLineTitle {
    width: 100px;
@@ -243,17 +243,20 @@ a {
 
 .banner {
    position: absolute;
-   bottom: -4rem;
+   top: -5rem;
    min-height: 8rem;
    background-color: rgb(56, 56, 56);
    border-radius: 2rem;
    width: 80vw;
-   z-index: 1;
+   z-index: 5;
    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+.text-shadow-white {
+   text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+}
 .bannerButton {
    height: 2.5rem;
    font-size: clamp(0.625rem, 0.6019rem + 0.1235vw, 0.75rem) !important;
@@ -273,7 +276,7 @@ a {
    background-position: left center;
    background-repeat: no-repeat;
    background-size: cover;
-   min-height: 60vh;
+   min-height: 65vh;
 }
 .contactCardtitle {
    font-size: clamp(0.75rem, 0.7037rem + 0.2469vw, 1rem);
