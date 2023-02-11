@@ -30,16 +30,24 @@ export default function FloatingNavbar() {
 
          <div className="menus d-flex" style={menuStyle}>
             <li className="my-3 mx-3 mobileIconMenu">
-               <MDBIcon fas icon="home" size="2x" />
+               <a href="#">
+                  <MDBIcon fas icon="home" size="2x" />
+               </a>
             </li>
             <li className="my-3 mx-3 mobileIconMenu">
-               <MDBIcon fas icon="user-alt" size="2x" />
+               <a href="#about">
+                  <MDBIcon fas icon="user-alt" size="2x" />
+               </a>
             </li>
             <li className="my-3 mx-3 mobileIconMenu">
-               <MDBIcon fas icon="briefcase" size="2x" />
+               <a href="#works">
+                  <MDBIcon fas icon="briefcase" size="2x" />
+               </a>
             </li>
             <li className="my-3 mx-3 mobileIconMenu">
-               <MDBIcon far icon="address-card" size="2x" />
+               <a href="#contact">
+                  <MDBIcon far icon="address-card" size="2x" />
+               </a>
             </li>
          </div>
       </div>

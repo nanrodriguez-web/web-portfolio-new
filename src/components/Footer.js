@@ -9,7 +9,6 @@ import {
 } from "mdb-react-ui-kit";
 import { Navigate } from "react-router-dom";
 import BannerCollab from "./BannerCollab";
-import ContactCard from "./ContactCard";
 
 export default function Footer() {
    const date = new Date();
@@ -18,8 +17,14 @@ export default function Footer() {
    return (
       <>
          <BannerCollab />
-         <div className="footer d-flex align-items-center justify-content-center flex-column">
-            <MDBContainer className="d-flex my-5 flex-column justify-content-center align-items-center h-100">
+         <div
+            id="contact"
+            className="footer d-flex align-items-center justify-content-center flex-column"
+         >
+            <MDBContainer
+               data-aos="zoom-in-up"
+               className="d-flex my-5 flex-column justify-content-center align-items-center h-100"
+            >
                <div className="contactCard my-5">
                   <MDBCard>
                      <MDBCardBody>

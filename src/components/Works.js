@@ -17,17 +17,33 @@ import responsive from "../images/responsive.png";
 
 export default function Works() {
    return (
-      <div className="workSection py-5 d-flex flex-column justify-content-center align-items-center">
+      <div
+         id="works"
+         className="workSection py-5 d-flex flex-column justify-content-center align-items-center"
+      >
          <div className="d-flex flex-column align-items-center mt-4">
-            <h1 className="weight900">Works</h1>
-            <span className="underLineTitleLight text-center"></span>
+            <h1 data-aos="zoom-in-down" className="weight900">
+               Works
+            </h1>
+            <span
+               data-aos="zoom-in"
+               className="underLineTitleLight text-center"
+            ></span>
          </div>
          <MDBContainer>
             <MDBRow className="d-flex justify-content-center">
-               <MDBCol lg={6} className="d-lg-flex justify-content-center my-5">
+               <MDBCol
+                  lg={6}
+                  data-aos="zoom-in"
+                  className="d-lg-flex justify-content-center my-5"
+               >
                   <MyCarousel />
                </MDBCol>
-               <MDBCol lg={6} className="d-lg-flex justify-content-center">
+               <MDBCol
+                  data-aos="zoom-in-left"
+                  lg={6}
+                  className="d-lg-flex justify-content-center"
+               >
                   <div className="d-flex flex-column align-items-center">
                      <img
                         className="responsiveBanner img-fluid"

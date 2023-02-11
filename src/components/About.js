@@ -4,21 +4,28 @@ import image from "../images/IMG_3425.JPG";
 export default function About() {
    return (
       <div>
-         <div className="backgroundImage-2 d-flex flex-column">
+         <div id="about" className="backgroundImage-2 d-flex flex-column">
             <div className="d-flex flex-column align-items-center mt-4">
-               <h1 className="weight800">About</h1>
-               <span className="underLineTitle text-center"></span>
+               <h1 data-aos="fade-down" className="weight800">
+                  About
+               </h1>
+               <span
+                  data-aos="zoom-in"
+                  className="underLineTitle text-center"
+               ></span>
             </div>
 
             <MDBContainer>
                <MDBRow className="h-100 my-3">
                   <MDBCol
+                     data-aos="fade-right"
                      md={6}
                      className="d-flex my-4 justify-content-center align-items-center"
                   >
                      <img className="imgNan" src={image} alt="" />
                   </MDBCol>
                   <MDBCol
+                     data-aos="fade-left"
                      md={6}
                      className="d-flex align-items-center  align-items-md-start flex-column justify-content-center my-4"
                   >

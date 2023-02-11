@@ -17,11 +17,11 @@ export default function Skills() {
    return (
       <MDBContainer className="skillsSection position-relative">
          <MDBRow className="d-flex flex-column my-4">
-            <h2 className="text-center p-0 weight800">
+            <h2 data-aos="fade-down" className="text-center p-0 weight800">
                Tools I am working with..
             </h2>
             <MDBCol className="">
-               <div className="my-4">
+               <div data-aos="fade-right" className="my-4">
                   <h4 className="text-center">Front End Development</h4>
                   <div className="d-flex justify-content-center my-3">
                      <span className="d-flex skillSet flex-column align-items-center">
@@ -59,7 +59,7 @@ export default function Skills() {
                      </span>
                   </div>
                </div>
-               <div className="my-4">
+               <div data-aos="fade-left" className="my-4">
                   <h4 className="text-center">Back End Development</h4>
                   <div className="d-flex justify-content-center my-3">
                      <div className="d-md-flex">
@@ -112,7 +112,7 @@ export default function Skills() {
                      </div>
                   </div>
                </div>
-               <div className="my-4">
+               <div data-aos="fade-right" className="my-4">
                   <h4 className="text-center">Full Stack Development</h4>
                   <div className="d-flex justify-content-center my-3">
                      <div className="d-md-flex">
@@ -165,7 +165,7 @@ export default function Skills() {
                      </div>
                   </div>
                </div>
-               <div className="my-4">
+               <div data-aos="fade-left" className="my-4">
                   <h4 className="text-center">Other tools</h4>
                   <div className="d-flex justify-content-center my-3">
                      <div className="d-md-flex">

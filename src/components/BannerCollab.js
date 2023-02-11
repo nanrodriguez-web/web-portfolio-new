@@ -20,78 +20,62 @@ import { useState } from "react";
 
 export default function BannerCollab() {
    const [centredModal, setCentredModal] = useState(false);
-   const toggleShow = () => setCentredModal(!centredModal);
 
    const [formValue, setFormValue] = useState({
       userName: "",
       email: "",
       message: "",
    });
+
+   const toggleShow = () => {
+      setCentredModal(!centredModal);
+      setFormValue({
+         userName: "",
+         email: "",
+         message: "",
+      });
+   };
+
+   const [sent, setSent] = useState(false);
+
    const onChange = (e) => {
       setFormValue({ ...formValue, [e.target.name]: e.target.value });
    };
-   function addProduct(e) {
+
+   function sendMessage(e) {
       e.preventDefault();
-
-      const retrieveToken = localStorage.getItem("token");
-
-      fetch(`${process.env.REACT_APP_API_URL}/users/details`, {
+      fetch("https://api.apispreadsheets.com/data/76Lmq5AcCYGqy4n9/", {
+         method: "POST",
          headers: {
-            Authorization: `Bearer ${retrieveToken}`,
+            "Content-Type": "application/json",
          },
-      })
-         .then((res) => res.json())
-         .then((data) => {
-            console.log(data);
+         body: JSON.stringify({
+            data: {
+               Name: formValue.userName,
+               Email: formValue.email,
+               Message: formValue.message,
+            },
+         }),
+      }).then((res) => {
+         if (res.status === 201) {
+            setSent(true);
+         } else {
+            setSent(false);
+         }
+      });
+   }
 
-            if (data.isAdmin) {
-               fetch(`${process.env.REACT_APP_API_URL}/products/addProduct`, {
-                  method: "POST",
-                  headers: {
-                     "Content-Type": "application/json",
-                     Authorization: `Bearer ${retrieveToken}`,
-                  },
-                  body: JSON.stringify({
-                     name: formValue.productName,
-                     description: formValue.description,
-                     price: formValue.price,
-                     image: formValue.image,
-                  }),
-               })
-                  .then((res) => res.json())
-                  .then((data) => {
-                     console.log(data);
-                     if (data) {
-                        // Swal.fire({
-                        //    title: "Successfully added product!",
-                        //    icon: "success",
-                        // });
-                        setFormValue({
-                           productName: "",
-                           price: "",
-                           description: "",
-                           image: "",
-                        });
-                     } else {
-                        // Swal.fire({
-                        //    title: "Failed to add product!",
-                        //    text: "Product already exists",
-                        //    icon: "error",
-                        // });
-                     }
-                  });
-            } else {
-               // Swal.fire({
-               //    title: "You are not allowed to access this!",
-               //    icon: "error",
-               // });
-            }
-         });
+   function updateSent(e) {
+      setSent(false);
+      toggleShow();
    }
 
    return (
       <>
-         <MDBContainer className="position-relative text-center d-flex justify-content-center w-100">
+         <MDBContainer
+            data-aos="zoom-in"
+            className="position-relative text-center d-flex justify-content-center w-100"
+         >
             <MDBRow className="banner text-center p-3">
                <MDBCol className="d-lg-flex align-items-center justify-content-between mx-auto my-auto">
                   <h2 className="bannerTitle my-2 mx-auto">
@@ -134,61 +118,76 @@ export default function BannerCollab() {
                            className="text-black needs-validation"
                            style={{ borderRadius: "25px" }}
                         >
-                           <MDBCardBody>
-                              <MDBRow
-                                 tag="form"
-                                 className="g-3 justify-content-center align-items-center"
-                                 onSubmit={(e) => addProduct(e)}
-                              >
-                                 <MDBCol md="12">
-                                    <MDBInput
-                                       value={formValue.userName}
-                                       name="userName"
-                                       onChange={onChange}
-                                       label="Name"
-                                       id="userNameId"
-                                       type="text"
-                                       className="w-100"
-                                       required
-                                    />
-                                 </MDBCol>
+                           {!sent ? (
+                              <MDBCardBody>
+                                 <MDBRow
+                                    tag="form"
+                                    className="g-3 justify-content-center align-items-center"
+                                    onSubmit={(e) => sendMessage(e)}
+                                 >
+                                    <MDBCol md="12">
+                                       <MDBInput
+                                          value={formValue.userName}
+                                          name="userName"
+                                          onChange={onChange}
+                                          label="Name"
+                                          id="userNameId"
+                                          type="text"
+                                          className="w-100"
+                                          required
+                                       />
+                                    </MDBCol>
 
-                                 <MDBCol md="12">
-                                    <MDBInput
-                                       value={formValue.email}
-                                       name="email"
-                                       onChange={onChange}
-                                       label="Email"
-                                       id="emailId"
-                                       type="email"
-                                       className="w-100"
-                                       required
-                                    />
-                                 </MDBCol>
-                                 <MDBCol md="12">
-                                    <MDBTextArea
-                                       value={formValue.message}
-                                       name="message"
-                                       onChange={onChange}
-                                       label="Message"
-                                       id="messageId"
-                                       type="text"
-                                       rows={8}
-                                       className="w-100"
-                                       required
-                                    />
-                                 </MDBCol>
-                                 <MDBCol size="12" className="text-center">
-                                    <MDBBtn
-                                       rounded
-                                       type="submit"
-                                       className="darkButton"
-                                    >
-                                       Send
-                                    </MDBBtn>
-                                 </MDBCol>
-                              </MDBRow>
-                           </MDBCardBody>
+                                    <MDBCol md="12">
+                                       <MDBInput
+                                          value={formValue.email}
+                                          name="email"
+                                          onChange={onChange}
+                                          label="Email"
+                                          id="emailId"
+                                          type="email"
+                                          className="w-100"
+                                          required
+                                       />
+                                    </MDBCol>
+                                    <MDBCol md="12">
+                                       <MDBTextArea
+                                          value={formValue.message}
+                                          name="message"
+                                          onChange={onChange}
+                                          label="Message"
+                                          id="messageId"
+                                          type="text"
+                                          rows={8}
+                                          className="w-100"
+                                          required
+                                       />
+                                    </MDBCol>
+                                    <MDBCol size="12" className="text-center">
+                                       <MDBBtn
+                                          rounded
+                                          type="submit"
+                                          className="darkButton"
+                                       >
+                                          Send
+                                       </MDBBtn>
+                                    </MDBCol>
+                                 </MDBRow>
+                              </MDBCardBody>
+                           ) : (
+                              <MDBCardBody>
+                                 <h1 className="my-5  ">Message Sent!</h1>
+                                 <h4 className="my-5  ">
+                                    I'll get touch on you.
+                                 </h4>
+                                 <MDBBtn
+                                    className="darkButton"
+                                    onClick={updateSent}
+                                 >
+                                    Okay
+                                 </MDBBtn>
+                              </MDBCardBody>
+                           )}
                         </MDBCard>
                      </MDBModalBody>
                   </MDBModalContent>

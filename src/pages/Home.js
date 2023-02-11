@@ -18,8 +18,12 @@ export default function Home() {
       <>
          <div className="backgroundImage">
             <MDBContainer>
-               <MDBRow className="ms-4 d-flex justify-content-center align-items-center min-height-100vh">
-                  <MDBCol md="9" className="font-white">
+               <MDBRow
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  className="ms-4 d-flex justify-content-center align-items-center min-height-100vh"
+               >
+                  <MDBCol className="font-white">
                      <h3>Hey!</h3>
                      <h1 className="lightWeight d-lg-block d-flex flex-column ">
                         <span className="p-0">I'm a </span>
