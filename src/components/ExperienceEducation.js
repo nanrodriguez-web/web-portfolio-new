@@ -4,8 +4,8 @@ export default function ExperienceEducation() {
    return (
       <>
          <MDBContainer>
-            <MDBRow className="experienceSection my-3 px-lg-3  ">
-               <MDBCol md={6} className="px-lg-5">
+            <MDBRow className="experienceSection my-3 px-md-5">
+               <MDBCol md={6} className="px-xl-5">
                   <h4 className="text-center my-2 weight800 ">Experience</h4>
                   <div className="my-3">
                      <h5>Park Maintenance Supervisor</h5>
@@ -43,7 +43,7 @@ export default function ExperienceEducation() {
                      </p>
                   </div>
                </MDBCol>
-               <MDBCol md={6} className="px-lg-5">
+               <MDBCol md={6} className="px-xl-5">
                   <h4 className="text-center my-2 weight800 ">Education</h4>
                   <div className="my-3">
                      <h5>Full Stack Development</h5>
