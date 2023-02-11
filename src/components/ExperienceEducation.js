@@ -70,7 +70,7 @@ export default function ExperienceEducation() {
                         Engineering
                      </h5>
                      <h6>
-                        <em>November 2018 - February 2022</em>
+                        <em>June 2013 - April 2018</em>
                      </h6>
                      <p className="text-justify my-3">
                         I earned my Bachelor of Science in Agricultural and

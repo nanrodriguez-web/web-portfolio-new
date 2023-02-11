@@ -9,7 +9,7 @@ import {
 import { Navigate } from "react-router-dom";
 import About from "../components/About";
 import ExperienceEducation from "../components/ExperienceEducation";
-import Navbar from "../components/Navbar";
+import Works from "../components/Works";
 
 export default function Home() {
    return (
@@ -103,6 +103,7 @@ export default function Home() {
          </div>
          <About />
          <ExperienceEducation />
+         <Works />
       </>
    );
 }

@@ -18,6 +18,11 @@
    color: rgba(0, 0, 0, 0.541);
    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
+.weight900 {
+   font-weight: 800;
+   color: rgba(255, 255, 255, 0.863);
+   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
 
 .lightWeight {
    font-weight: 400;
@@ -162,4 +167,16 @@
 }
 .experienceSection {
    min-height: 70vh;
+}
+
+.workSection {
+   background: #fff url("./images/pexels-hasan-albari-1229861.jpg") left
+      center/cover no-repeat;
+   background-attachment: fixed;
+   min-height: 100vh;
+}
+
+.Card {
+   transition: all 0.5s ease;
+   margin: 1rem 1rem 1rem 1rem;
 }
