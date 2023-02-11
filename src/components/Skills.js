@@ -17,12 +17,12 @@ export default function Skills() {
       <>
          <MDBContainer className="skillsSection">
             <MDBRow className="d-flex flex-column my-5">
-               <h3 className="text-center p-0 weight800">
-                  Things I am working with..
-               </h3>
+               <h2 className="text-center p-0 weight800">
+                  Tools I am working with..
+               </h2>
                <MDBCol className="">
                   <div className="my-4">
-                     <h4 className="text-center">Front End</h4>
+                     <h4 className="text-center">Front End Development</h4>
                      <div className="d-flex justify-content-center my-3">
                         <span className="d-flex skillSet flex-column align-items-center">
                            <img
@@ -30,7 +30,10 @@ export default function Skills() {
                               src={html}
                               alt=""
                            />
-                           <span>HTML</span>
+                           <div className="d-flex flex-column align-items-center">
+                              <span>HTML</span>
+                              <span className="underLine text-center"></span>
+                           </div>
                         </span>
                         <span className="d-flex skillSet flex-column align-items-center">
                            <img
@@ -38,37 +41,49 @@ export default function Skills() {
                               src={css}
                               alt=""
                            />
-                           <span>CSS</span>
+                           <div className="d-flex flex-column align-items-center">
+                              <span>CSS</span>
+                              <span className="underLine text-center"></span>
+                           </div>
                         </span>
                         <span className="d-flex skillSet flex-column align-items-center">
                            <img
                               className="skillsIcon img-fluid"
-                              src={jscript}
+                              src={figma}
                               alt=""
                            />
-                           <span>Javascript</span>
+                           <div className="d-flex flex-column align-items-center">
+                              <span>Figma</span>
+                              <span className="underLine text-center"></span>
+                           </div>
                         </span>
                      </div>
                   </div>
                   <div className="my-4">
-                     <h4 className="text-center">Back End</h4>
+                     <h4 className="text-center">Back End Development</h4>
                      <div className="d-flex justify-content-center my-3">
                         <div className="d-md-flex">
+                           <span className="d-flex skillSet flex-column align-items-center">
+                              <img
+                                 className="skillsIcon img-fluid"
+                                 src={jscript}
+                                 alt=""
+                              />
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Javascript</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
+                           </span>
                            <span className="d-flex skillSet flex-column align-items-center">
                               <img
                                  className="skillsIcon img-fluid"
                                  src={nodeJS}
                                  alt=""
                               />
-                              <span>Node JS</span>
-                           </span>
-                           <span className="d-flex skillSet flex-column align-items-center">
-                              <img
-                                 className="skillsIcon img-fluid"
-                                 src={expressJs}
-                                 alt=""
-                              />
-                              <span>Express JS</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Node JS</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                         </div>
                         <div className="d-md-flex">
@@ -78,30 +93,76 @@ export default function Skills() {
                                  src={mongoDB}
                                  alt=""
                               />
-                              <span>MongoDB</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>MongoDB</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                            <span className="d-flex skillSet flex-column align-items-center">
                               <img
                                  className="skillsIcon img-fluid"
-                                 src={postman}
+                                 src={expressJs}
                                  alt=""
                               />
-                              <span>Postman</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Express JS</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                         </div>
                      </div>
                   </div>
                   <div className="my-4">
-                     <h4 className="text-center">Full Stack</h4>
+                     <h4 className="text-center">Full Stack Development</h4>
                      <div className="d-flex justify-content-center my-3">
-                        <span className="d-flex skillSet flex-column align-items-center">
-                           <img
-                              className="skillsIcon img-fluid"
-                              src={react}
-                              alt=""
-                           />
-                           <span>React JS</span>
-                        </span>
+                        <div className="d-md-flex">
+                           <span className="d-flex skillSet flex-column align-items-center">
+                              <img
+                                 className="skillsIcon img-fluid"
+                                 src={mongoDB}
+                                 alt=""
+                              />
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>MongoDB</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
+                           </span>
+                           <span className="d-flex skillSet flex-column align-items-center">
+                              <img
+                                 className="skillsIcon img-fluid"
+                                 src={expressJs}
+                                 alt=""
+                              />
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Express JS</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
+                           </span>
+                        </div>
+                        <div className="d-md-flex">
+                           <span className="d-flex skillSet flex-column align-items-center">
+                              <img
+                                 className="skillsIcon img-fluid"
+                                 src={react}
+                                 alt=""
+                              />
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>React JS</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
+                           </span>
+                           <span className="d-flex skillSet flex-column align-items-center">
+                              <img
+                                 className="skillsIcon img-fluid"
+                                 src={nodeJS}
+                                 alt=""
+                              />
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Node JS</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
+                           </span>
+                        </div>
                      </div>
                   </div>
                   <div className="my-4">
@@ -114,7 +175,10 @@ export default function Skills() {
                                  src={git}
                                  alt=""
                               />
-                              <span>Git</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Git</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                            <span className="d-flex skillSet flex-column align-items-center">
                               <img
@@ -122,7 +186,10 @@ export default function Skills() {
                                  src={vscode}
                                  alt=""
                               />
-                              <span>VS Code</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>VS Code</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                         </div>
                         <div className="d-md-flex">
@@ -132,15 +199,21 @@ export default function Skills() {
                                  src={chromedev}
                                  alt=""
                               />
-                              <span>Chrome DevTools</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Chrome Dev Tools</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                            <span className="d-flex skillSet flex-column align-items-center">
                               <img
                                  className="skillsIcon img-fluid"
-                                 src={figma}
+                                 src={postman}
                                  alt=""
                               />
-                              <span>Figma</span>
+                              <div className="d-flex flex-column align-items-center">
+                                 <span>Postman</span>
+                                 <span className="underLine text-center"></span>
+                              </div>
                            </span>
                         </div>
                      </div>

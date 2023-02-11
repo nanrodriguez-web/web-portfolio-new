@@ -217,5 +217,21 @@
    transform: scale(1.2);
 }
 .skillSet {
-   margin: 0 !importants;
+   margin: 0 !important;
+}
+.underLineTitle {
+   width: 100px;
+   border-bottom: 2px solid rgb(0, 0, 0);
+}
+.underLineTitleLight {
+   width: 100px;
+   border-bottom: 2px solid rgb(255, 255, 255);
+}
+.underLine {
+   width: 0;
+   border-bottom: 2px solid rgb(0, 0, 0);
+   transition: width 0.5s ease;
+}
+.skillsIcon:hover + div > .underLine {
+   width: 30px !important   ;
 }

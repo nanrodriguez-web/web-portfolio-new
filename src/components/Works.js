@@ -18,7 +18,10 @@ import responsive from "../images/responsive.png";
 export default function Works() {
    return (
       <div className="workSection py-5 d-flex flex-column justify-content-center align-items-center">
-         <h1 className="weight900">Works</h1>
+         <div className="d-flex flex-column align-items-center mt-4">
+            <h1 className="weight900">Works</h1>
+            <span className="underLineTitleLight text-center"></span>
+         </div>
          <MDBContainer>
             <MDBRow className="d-flex justify-content-center">
                <MDBCol lg={6} className="d-lg-flex justify-content-center my-5">
