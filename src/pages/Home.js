@@ -8,6 +8,7 @@ import {
 
 import { Navigate } from "react-router-dom";
 import About from "../components/About";
+import ExperienceEducation from "../components/ExperienceEducation";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -101,6 +102,7 @@ export default function Home() {
             </MDBContainer>
          </div>
          <About />
+         <ExperienceEducation />
       </>
    );
 }
