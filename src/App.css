@@ -204,3 +204,18 @@
    color: rgba(255, 255, 255, 0.705);
    width: 80%;
 }
+
+.skillsSection {
+   min-height: 80vh;
+}
+.skillsIcon {
+   width: 100px;
+   margin: 10px 25px 10px 25px;
+   transition: transform 0.3s ease;
+}
+.skillsIcon:hover {
+   transform: scale(1.2);
+}
+.skillSet {
+   margin: 0 !importants;
+}

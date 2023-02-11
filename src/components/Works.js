@@ -21,10 +21,10 @@ export default function Works() {
          <h1 className="weight900">Works</h1>
          <MDBContainer>
             <MDBRow className="d-flex justify-content-center">
-               <MDBCol md={6} className="d-lg-flex justify-content-center my-5">
+               <MDBCol lg={6} className="d-lg-flex justify-content-center my-5">
                   <MyCarousel />
                </MDBCol>
-               <MDBCol md={6} className="d-lg-flex justify-content-center">
+               <MDBCol lg={6} className="d-lg-flex justify-content-center">
                   <div className="d-flex flex-column align-items-center">
                      <img
                         className="responsiveBanner img-fluid"

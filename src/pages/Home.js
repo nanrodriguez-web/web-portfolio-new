@@ -9,6 +9,7 @@ import {
 import { Navigate } from "react-router-dom";
 import About from "../components/About";
 import ExperienceEducation from "../components/ExperienceEducation";
+import Skills from "../components/Skills";
 import Works from "../components/Works";
 
 export default function Home() {
@@ -104,6 +105,7 @@ export default function Home() {
          <About />
          <ExperienceEducation />
          <Works />
+         <Skills />
       </>
    );
 }
