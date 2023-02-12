@@ -34,8 +34,10 @@ export default function BannerCollab() {
          email: "",
          message: "",
       });
+      setLoading(false);
    };
 
+   const [loading, setLoading] = useState(false);
    const [sent, setSent] = useState(false);
 
    const onChange = (e) => {
@@ -44,6 +46,7 @@ export default function BannerCollab() {
 
    function sendMessage(e) {
       e.preventDefault();
+      setLoading(true);
       fetch("https://api.apispreadsheets.com/data/76Lmq5AcCYGqy4n9/", {
          method: "POST",
          headers: {
@@ -57,6 +60,7 @@ export default function BannerCollab() {
             },
          }),
       }).then((res) => {
+         console.log(res.json());
          if (res.status === 201) {
             setSent(true);
          } else {
@@ -164,8 +168,9 @@ export default function BannerCollab() {
                                           rounded
                                           type="submit"
                                           className="darkButton"
+                                          disabled={loading}
                                        >
-                                          Send
+                                          {loading ? "Sending..." : "Send"}
                                        </MDBBtn>
                                     </MDBCol>
                                  </MDBRow>
