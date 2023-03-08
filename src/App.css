@@ -287,3 +287,7 @@ a {
 .contactCardDetails {
    font-size: clamp(0.75rem, 0.7269rem + 0.1235vw, 0.875rem);
 }
+
+ul {
+   list-style-type: circle;
+}

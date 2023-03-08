@@ -17,32 +17,65 @@ export default function ExperienceEducation() {
                      <h6>
                         <em>February 2022 - November 2022</em>
                      </h6>
-                     <p className="text-justify my-3">
-                        My experience in park maintenance has given me a solid
-                        understanding of the importance of maintaining and
-                        updating facilities and equipment. This experience can
-                        be applied to web development by ensuring that I am
-                        proactive in maintaining and updating web applications
-                        to ensure their continued performance and security
-                     </p>
+
+                     <ul className="text-justify my-3">
+                        <li>
+                           Maintained and updated park facilities and equipment
+                        </li>
+                        <li>
+                           Ensured the park was safe and clean for visitors
+                        </li>
+                        <li>Managed a team of maintenance staff</li>
+                        <li>
+                           Coordinated with other departments to ensure
+                           efficient operations
+                        </li>
+                        <em>Transferable skill to web development:</em>
+                        <ul>
+                           <li>
+                              Proactive maintenance and updates of web
+                              applications
+                           </li>
+                           <li>
+                              Understanding the importance of continued
+                              performance and security
+                           </li>
+                        </ul>
+                     </ul>
                   </div>
                   <div data-aos="fade-up" className="my-3">
                      <h5>Irrigation Engineer & Designer</h5>
                      <h6>
                         <em>November 2018 - February 2022</em>
                      </h6>
-                     <p className="text-justify my-3">
-                        As an Irrigation Engineer and Designer, I was
-                        responsible for the planning, design, and implementation
-                        of irrigation systems for a variety of landscapes and
-                        golf courses. I managed projects from start to finish,
-                        which involved working closely with clients to
-                        understand their requirements, conducting site
-                        assessments, developing designs and cost estimates, and
-                        overseeing the construction and installation of the
-                        systems. I also bring to web development my experience
-                        in problem-solving and critical thinking.
-                     </p>
+
+                     <ul className="text-justify my-3">
+                        <li>
+                           Planned, designed, and implemented irrigation systems
+                           for various landscapes and golf courses
+                        </li>
+                        <li>
+                           Managed projects from start to finish, including
+                           client communication, site assessments, design
+                           development, cost estimating, and overseeing
+                           installation
+                        </li>
+                        <li>
+                           Collaborated with cross-functional teams including
+                           architects, contractors, and landscapers
+                        </li>
+                        <li>
+                           Utilized problem-solving and critical thinking skills
+                           to troubleshoot issues during project execution
+                        </li>
+                        <em>Transferable skill to web development:</em>
+                        <ul>
+                           <li>
+                              Problem-solving and critical thinking skills for
+                              troubleshooting and debugging web applications
+                           </li>
+                        </ul>
+                     </ul>
                   </div>
                </MDBCol>
                <MDBCol lg={6} className="px-xl-5">
@@ -57,19 +90,24 @@ export default function ExperienceEducation() {
                      <h6>
                         <em>December 2022 - February 2023</em>
                      </h6>
-                     <p className="text-justify my-3">
-                        I completed a Full Stack Development Course using the
-                        MERN Stack at Zuitt, where I gained hands-on experience
-                        in developing modern web applications. One of the
-                        highlights of my course was my capstone project, where I
-                        developed an e-commerce API for the backend. This
-                        project challenged me to apply all the skills and
-                        knowledge I had acquired during the course and showcase
-                        my ability to create a complex and scalable system. My
-                        project was recognized by my instructors and peers as
-                        the best capstone for the backend, and I received praise
-                        for my technical skills and attention to detail.
-                     </p>
+
+                     <ul className="text-justify my-3">
+                        <li>
+                           Completed a Full Stack Development Course, gaining
+                           hands-on experience in developing modern web
+                           applications
+                        </li>
+                        <li>
+                           Developed an e-commerce API for the backend as a
+                           capstone project, showcasing complex and scalable
+                           system creation abilities
+                        </li>
+                        <li>
+                           Recognized by instructors and peers as the best
+                           capstone for the backend and praised for technical
+                           skills and attention to detail.
+                        </li>
+                     </ul>
                   </div>
                   <div data-aos="fade-up" className="my-5">
                      <h5>
@@ -79,16 +117,21 @@ export default function ExperienceEducation() {
                      <h6>
                         <em>June 2013 - April 2018</em>
                      </h6>
-                     <p className="text-justify my-3">
-                        I earned my Bachelor of Science in Agricultural and
-                        Biosystems Engineering from a growing university, where
-                        I gained a solid foundation in the principles and
-                        practices of both agriculture and engineering. This
-                        background has given me a unique perspective on the
-                        interplay between technology and the natural world, and
-                        has equipped me with valuable skills that I can apply to
-                        software engineering
-                     </p>
+
+                     <ul className="text-justify my-3">
+                        <li>
+                           Solid foundation in the principles and practices of
+                           both agriculture and engineering
+                        </li>
+                        <li>
+                           Unique perspective on the interplay between
+                           technology and the natural world
+                        </li>
+                        <li>
+                           Valuable skills that can be applied to software
+                           engineering
+                        </li>
+                     </ul>
                   </div>
                </MDBCol>
             </MDBRow>

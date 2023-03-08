@@ -47,7 +47,7 @@ export default function BannerCollab() {
    function sendMessage(e) {
       e.preventDefault();
       setLoading(true);
-      fetch("https://api.apispreadsheets.com/data/76Lmq5AcCYGqy4n9/", {
+      fetch("https://api.apispreadsheets.com/data/aiNoS8pA6PNZ9HiZ/", {
          method: "POST",
          headers: {
             "Content-Type": "application/json",

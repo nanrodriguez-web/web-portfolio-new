@@ -15,6 +15,9 @@ import image1 from "../images/code.png";
 import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
 import image4 from "../images/image4.png";
+import image5 from "../images/image5.png";
+import image6 from "../images/image6.png";
+import image7 from "../images/image7.png";
 
 class MyCarousel extends Component {
    static get CONTAINER_STYLE() {
@@ -178,6 +181,105 @@ class MyCarousel extends Component {
                            target="_blank"
                            className="darkButton"
                            href="https://capstone3-reupload-capstone3-reupload.vercel.app/"
+                        >
+                           Visit this site
+                        </MDBBtn>
+                     </MDBCardBody>
+                  </MDBCard>
+               </div>
+               <div style={MyCarousel.CARD_STYLE}>
+                  <MDBCard>
+                     <MDBRipple
+                        rippleColor="light"
+                        rippleTag="div"
+                        className="bg-image hover-overlay"
+                     >
+                        <MDBCardImage src={image5} fluid alt="..." />
+                        <a>
+                           <div
+                              className="mask"
+                              style={{
+                                 backgroundColor: "rgba(251, 251, 251, 0.15)",
+                              }}
+                           ></div>
+                        </a>
+                     </MDBRipple>
+                     <MDBCardBody className="Card">
+                        <MDBCardTitle>BlogAPI with OpenAPI 3.0.0</MDBCardTitle>
+                        <MDBCardText className="cardText">
+                           Created a simple API with documentation using{" "}
+                           <strong>OpenAPI</strong>
+                        </MDBCardText>
+                        <MDBBtn
+                           target="_blank"
+                           className="darkButton"
+                           href="https://blogapi-1pat.onrender.com/api-docs/"
+                        >
+                           Visit this site
+                        </MDBBtn>
+                     </MDBCardBody>
+                  </MDBCard>
+               </div>
+               <div style={MyCarousel.CARD_STYLE}>
+                  <MDBCard>
+                     <MDBRipple
+                        rippleColor="light"
+                        rippleTag="div"
+                        className="bg-image hover-overlay"
+                     >
+                        <MDBCardImage src={image7} fluid alt="..." />
+                        <a>
+                           <div
+                              className="mask"
+                              style={{
+                                 backgroundColor: "rgba(251, 251, 251, 0.15)",
+                              }}
+                           ></div>
+                        </a>
+                     </MDBRipple>
+                     <MDBCardBody className="Card">
+                        <MDBCardTitle>Landing Page</MDBCardTitle>
+                        <MDBCardText className="cardText">
+                           Converted a responsive landing page from{" "}
+                           <strong>Photoshop</strong> using{" "}
+                           <strong>ReactJS</strong>
+                        </MDBCardText>
+                        <MDBBtn
+                           target="_blank"
+                           className="darkButton"
+                           href="https://flo-qast-xtendly.vercel.app/"
+                        >
+                           Visit this site
+                        </MDBBtn>
+                     </MDBCardBody>
+                  </MDBCard>
+               </div>
+               <div style={MyCarousel.CARD_STYLE}>
+                  <MDBCard>
+                     <MDBRipple
+                        rippleColor="light"
+                        rippleTag="div"
+                        className="bg-image hover-overlay"
+                     >
+                        <MDBCardImage src={image6} fluid alt="..." />
+                        <a>
+                           <div
+                              className="mask"
+                              style={{
+                                 backgroundColor: "rgba(251, 251, 251, 0.15)",
+                              }}
+                           ></div>
+                        </a>
+                     </MDBRipple>
+                     <MDBCardBody className="Card">
+                        <MDBCardTitle>Simple Digital Clock</MDBCardTitle>
+                        <MDBCardText className="cardText">
+                           Created a simple clock using <strong>ReactJS</strong>
+                        </MDBCardText>
+                        <MDBBtn
+                           target="_blank"
+                           className="darkButton"
+                           href="https://digital-clock-5af.pages.dev/"
                         >
                            Visit this site
                         </MDBBtn>
