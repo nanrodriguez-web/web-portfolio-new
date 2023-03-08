@@ -180,7 +180,7 @@ class MyCarousel extends Component {
                         <MDBBtn
                            target="_blank"
                            className="darkButton"
-                           href="https://capstone3-reupload-capstone3-reupload.vercel.app/"
+                           href="https://capstone3-e-commerce.pages.dev/"
                         >
                            Visit this site
                         </MDBBtn>
